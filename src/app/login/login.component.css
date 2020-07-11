@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Lato-regular;
+    src: url(../../assets/fonts/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-login {
+    margin: 20px 30px;
+}
+
+.margin-b-20 {
+    margin-bottom: 20px;
+}
+
+.margin-b-30 {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 200px;
+    display: inline-block;
+    /* width: 40%; */
+}
+
+.container-login__title {
+    color: var(--color-gray-dark);
+    font-family: Lato-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    position: absolute;
+    left: 134px;
+}
+
+.container-login__slogan {
+    color: var(--color-lemon-green);
+    font-family: Lato-Regular;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 155px;
+    top: 98px;
+}
+
+.container-login__title-slogan {
+    width: 40%;
+    padding-top: 80px;
+}
+
+.container-login__img {
+    width: 20px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.container-login__img--eye {
+    position: absolute;
+    width: 20px;
+    right: 14px;
+    top: 17px
+}
+
+.container-login__input {
+    background-color: var(--color-gray-extra-light);
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+
+/* Start checkbox */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.checkPassword {
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid #c4c4c4;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.checkPassword label::after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 4px;
+    border: 3px solid var(--color-gray-dark);
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.checkPassword input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+
+/* End checkbox */
+
+.container-login__remember-password {
+    position: absolute;
+    top: -21px;
+    left: 25px;
+    font-family: Lato-regular;
+    color: var(--color-lemon-green);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-signin {
+    background-color: var(--color-yellow);
+    border: none;
+    width: 100%;
+    font-family: Lato-regular;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: var(--color-gray-dark);
+    height: 50px;
+    border-radius: 30px;
+}
+
+.container-login__forgot-password {
+    text-align: center;
+    font-family: Lato-regular;
+    font-size: 14px;
+    color: var( --color-lemon-green);
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+}
+
+.img-social-networking {
+    width: 35px;
+}
+
+.container-login__separator {
+    display: block;
+    width: 110px;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-gray-light);
+    font-family: Lato-regular;
+    font-weight: bold;
+}
+
+.container-login__account {
+    font-family: Lato-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: var(--color-lemon-green);
+}
+
+.container-login__signup {
+    color: var(--color-gray-dark);
+    padding-left: 10px;
+}

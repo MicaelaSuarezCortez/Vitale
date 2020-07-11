@@ -1,0 +1,71 @@
+<div class="container-login">
+    <div class="position-relative d-flex">
+        <img src="../../assets/images/logo.png" alt="logo" class="logo">
+        <div class="container-login__title-slogan">
+            <h3 class="container-login__title">
+                Vitale
+            </h3>
+            <span class="container-login__slogan">Life in balance</span>
+        </div>
+    </div>
+    <form>
+        <div class="col margin-b-20">
+            <img src="../../assets/images/user.png" alt="" class="container-login__img">
+            <input type="text" class="container-login__input">
+        </div>
+
+        <div class="col margin-b-20">
+            <img src="../../assets/images/lock.png" alt="" class="container-login__img">
+            <input type="text" class="container-login__input">
+            <img src="../../assets/images/hide-password.png" alt="" class="container-login__img--eye">
+            <img *ngIf="showPassword === true" src="../../assets/images/show-password.png" alt="" class="container-login__img--eye">
+
+        </div>
+
+
+        <div class="checkPassword">
+            <input class="" type="checkbox" id="checkPassword">
+            <label class="" for="checkPassword">
+                   
+                 </label>
+
+        </div>
+        <div class="position-relative margin-b-20">
+            <span class="container-login__remember-password"> Remember password?</span>
+        </div>
+
+
+
+        <div class="col margin-b-20">
+            <button class="btn-signin">
+            Sign in
+        </button>
+        </div>
+
+        <div class="margin-b-30">
+            <span class="container-login__forgot-password">Forgot your password?</span>
+        </div>
+
+        <hr class="">
+        <span class="container-login__separator">Or</span>
+
+
+        <div class="d-flex justify-content-around margin-b-20">
+            <div>
+                <img src="../../assets/images/facebook.png" alt="facebook" class="img-social-networking">
+            </div>
+            <div>
+                <img src="../../assets/images/google.png " alt="google" class="img-social-networking">
+            </div>
+            <div>
+                <img src="../../assets/images/instagram.png " alt="instagram" class="img-social-networking">
+            </div>
+        </div>
+
+
+    </form>
+    <div class="d-flex justify-content-center ">
+        <p class="container-login__account ">Don't have an account?</p>
+        <p class="container-login__account container-login__signup ">Sign up</p>
+    </div>
+</div>
